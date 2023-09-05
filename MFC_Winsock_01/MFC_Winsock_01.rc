@@ -1,0 +1,266 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\MFC_Winsock_01.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MFC_Winsock_01.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MFC_Winsock_01"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "MFC_Winsock_01, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_MFC_WINSOCK_01_DIALOG DIALOGEX 0, 0, 521, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MFC_Winsock_01"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,464,162,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,464,179,50,14
+    CTEXT           "C_Server class",IDC_SERVER_TITLE,7,20,50,8
+    CTEXT           "C_Client class",IDC_CLIENT_TITLE,342,20,46,8
+    PUSHBUTTON      "1: Initialize",IDC_BTN_SERVER_INIT,7,30,50,14,BS_LEFT
+    LTEXT           "Status",IDC_TXT_SERVER_INIT_STATUS,69,30,22,8
+    PUSHBUTTON      "3: Initialize",IDC_BTN_CLIENT_INIT,340,30,50,14,BS_LEFT
+    LTEXT           "Status",IDC_TXT_CLIENT_INIT_STATUS,395,30,34,8
+    PUSHBUTTON      "2: Listen",IDC_BTN_SERVER_LISTEN,7,50,50,14,BS_LEFT
+    LTEXT           "Status",IDC_TXT_SERVER_LISTEN_STATUS,68,50,22,8
+    PUSHBUTTON      "5: Accept",IDC_BTN_SERVER_ACCEPT,7,70,50,14,BS_LEFT
+    LTEXT           "Status",IDC_TXT_SERVER_ACCEPT_STATUS,69,70,22,8
+    PUSHBUTTON      "Close",IDC_BTN_SERVER_CLOSE,7,179,50,14
+    PUSHBUTTON      "Close",IDC_BTN_CLIENT_CLOSE,349,179,50,14
+    PUSHBUTTON      "4: Connect",IDC_BTN_CLIENT_CONNECT,340,50,50,14,BS_LEFT | WS_GROUP
+    LTEXT           "Status",IDC_TXT_CLIENT_CONNECT_STATUS,395,50,35,8
+    LTEXT           "none",IDC_CLIENT_WSA_TEXT,340,154,54,8
+    LTEXT           "WSA Error Code",IDC_LBL_CLIENT_WSA_ERROR,340,142,63,8
+    LTEXT           "none",IDC_TXT_SERVER_WSA,7,154,54,8
+    LTEXT           "WSA Error Code",IDC_LBL_SERVER_WSA,7,142,63,8
+    LTEXT           "OnAccept()",IDC_LBL_CLIENT_ON_ACCEPT,431,30,45,8
+    RTEXT           "x",IDC_TXT_CLIENT_ON_ACCEPT,492,31,8,8
+    LTEXT           "OnClose()",IDC_LBL_CLIENT_ON_CLOSE,431,45,45,8
+    RTEXT           "x",IDC_TXT_CLIENT_ON_CLOSE,492,46,8,8
+    LTEXT           "OnConnect()",IDC_LBL_CLIENT_ON_CONNECT,431,60,45,8
+    RTEXT           "x",IDC_TXT_CLIENT_ON_CONNECT,492,62,8,8
+    LTEXT           "On Out Band()",IDC_LBL_CLIENT_ON_OUT_BAND,431,75,45,8
+    RTEXT           "x",IDC_TXT_CLIENT_ON_OUT_BAND,492,76,8,8
+    LTEXT           "OnReceive()",IDC_LBL_CLIENT_ON_RECEIVE,431,90,45,8
+    RTEXT           "x",IDC_TXT_CLIENT_ON_RECEIVE,492,91,8,8
+    LTEXT           "OnSend()",IDC_LBL_CLIENT_ON_SEND,431,105,45,8
+    RTEXT           "x",IDC_TXT_CLIENT_ON_SEND,492,106,8,8
+    LTEXT           "OnAccept()",IDC_LBL_SERVER_ON_ACCEPT,105,30,45,8
+    RTEXT           "x",IDC_TXT_SERVER_ON_ACCEPT,166,30,8,8
+    LTEXT           "OnClose()",IDC_LBL_SERVER_ON_CLOSE2,105,45,45,8
+    RTEXT           "x",IDC_TXT_SERVER_ON_CLOSE,166,45,8,8
+    LTEXT           "OnConnect()",IDC_LBL_SERVER_ON_CONNECT2,105,60,45,8
+    RTEXT           "x",IDC_TXT_SERVER_ON_CONNECT,166,60,8,8
+    LTEXT           "On Out Band()",IDC_LBL_SERVER_ON_OUT_BAND2,105,75,56,8
+    RTEXT           "x",IDC_TXT_SERVER_ON_OUT_BAND2,166,75,8,8
+    LTEXT           "OnReceive()",IDC_LBL_SERVER_ON_RECEIVE2,105,90,45,8
+    RTEXT           "x",IDC_TXT_SERVER_ON_RECEIVE2,166,90,8,8
+    LTEXT           "OnSend()",IDC_LBL_SERVER_ON_SEND2,105,105,45,8
+    RTEXT           "x",IDC_TXT_SERVER_ON_SEND2,166,105,8,8
+    PUSHBUTTON      "Send",IDC_BTN_SERVER_SEND,7,90,50,14
+    LTEXT           "OnAccept()",IDC_LBL_SER_SEND_ON_ACCEPT,255,30,45,8
+    RTEXT           "x",IDC_TXT_SERV_SEND_ON_ACCEPT,316,33,8,8
+    LTEXT           "OnClose()",IDC_LBL_SERV_SEND_ON_CLOSE,255,45,45,8
+    RTEXT           "x",IDC_TXT_SERV_SEND_ON_CLOSE,316,49,8,8
+    LTEXT           "OnConnect()",IDC_LBL_SERV_SEND_ON_CONNECT,255,60,45,8
+    RTEXT           "x",IDC_TXT_SERV_SEND_ON_CONNECT,316,63,8,8
+    LTEXT           "On Out Band()",IDC_LBL_SERV_SEND_ON_OUT_BAND,255,75,45,8
+    RTEXT           "x",IDC_TXT_SERV_SEND_ON_OUT_BAND,316,78,8,8
+    LTEXT           "OnReceive()",IDC_LBL_SERV_SEND_ON_RECEIVE,255,90,45,8
+    RTEXT           "x",IDC_TXT_SERV_SEND_ON_RECEIVE,316,94,8,8
+    LTEXT           "OnSend()",IDC_LBL_SERV_SEND_ON_SEND,255,105,45,8
+    RTEXT           "x",IDC_TXT_SERV_SEND_ON_SEND,316,108,8,8
+    PUSHBUTTON      "6: Send",IDC_BTN_SERVER_SEND_SEND,197,30,50,14,BS_LEFT
+    LTEXT           "C_Server_Send class",IDC_LBL_SERVER_CLIENT_NAME,202,18,61,8
+    LTEXT           "none",IDC_TEXT_CSS_WSA,197,154,54,8
+    LTEXT           "WSA Error Code",IDC_LBL_CSS_WSA,197,142,63,8
+    PUSHBUTTON      "7: Receive",IDC_BTN_CLIENT_RECEIVE,340,70,50,14,BS_LEFT
+    LTEXT           "Status",IDC_TXT_CLIENT_RECEIVE_STATUS,396,70,22,8
+    LTEXT           "Received Time",IDC_LBL_CLIENT_RCVD_TIME,205,185,47,8
+    LTEXT           "HH:MM:SS.xxx",IDC_TXT_CLIENT_RCVD_TIME,257,185,49,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MFC_Winsock_01.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "MFC_Winsock_01.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_MFC_WINSOCK_01_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 514
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About MFC_Winsock_01..."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\MFC_Winsock_01.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
